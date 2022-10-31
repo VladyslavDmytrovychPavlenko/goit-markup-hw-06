@@ -885,6 +885,7 @@ body {
   background-color: var(--accent-color);
   background-image: url("../images/icon/icon-check.svg");
   background-position: center;
+  border-color: var(--accent-color);
 }
 .check-link {
   color: var(--accent-color);
