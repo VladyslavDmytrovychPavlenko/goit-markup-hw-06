@@ -550,9 +550,7 @@ body {
    fill: var(--primary-bg-color);
    transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
-/* .item-icon-footer {
-   margin-top: 20px;
-} */
+
 .social-list-footer .item-icon-footer:not(:nth-child(4n)) {
    margin-right: 10px;
 }
@@ -560,6 +558,49 @@ body {
 .social-link-footer:focus {
    background-color: var(--accent-color);
    fill: var(--primary-bg-color);
+}
+
+/* footer Підписка */
+.footer-box3 {
+   margin-left: 93px;
+}
+.footer-box3 .text {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--primary-bg-color);
+   margin-bottom: 20px;
+}
+/* .form-footer {
+} */
+.form-footer-content {
+   display: flex;
+}
+/* .form-label-footer {
+} */
+.form-footer-input {
+   width: 358px;
+   height: 50px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+   background-color: #2F303A;
+   padding: 15px 16px;
+   color: rgba(255, 255, 255, 0.6);
+}
+.modal-btn-footer {
+   margin-left: 12px;
+   padding: 10px 28px;
+   min-width: 200px;
+   align-items: center;
+}
+.form-footer-input::placeholder {
+   color: rgba(255, 255, 255, 0.6);
+}
+.modal-icon-footer {
+   margin-left: 10px;
 }
 
 
@@ -710,6 +751,7 @@ body {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   padding: 40px;
 }
 .close-btn {
    position: absolute;
@@ -725,9 +767,133 @@ body {
    border-radius: 50%;
    cursor: pointer;
 }
+.form {
+   width: 448px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.form-modal {
+   text-align: center;
+}
+.modal .text {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.15;
+   letter-spacing: 0.03em;
+   color: var(--secondary-text-color);
+   text-align: center;
+   margin-bottom: 12px;
+}
+.icon-modal {
+   transition: fill 250ms var(--timing-function);
+}
+.icon-modal:hover {
+   fill: var(--accent-color);
+}
+.form-modal-content {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 10px;
+}
+.form-modal-input {
+   width: 100%;
+   height: 40px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   padding: 12px;
+   padding-left: 42px;
+   transition: border-color 250ms var(--timing-function);
+}
+.form-modal-input:hover,
+.form-modal-input:focus {
+   border-color: var(--accent-color);
+   outline: none;
+}
+.form-modal-input:hover + .modal-icon,
+.form-modal-input:focus + .modal-icon{
+   fill: var(--accent-color);
+}
+.form-label {
+   font-size: 12px;
+   line-height: 1.16;
 
+   letter-spacing: 0.01em;
 
-
+   color: var(--primary-text-color);
+   margin-bottom: 4px;
+}
+.modal-icon {
+   position: absolute;
+   top: 50%;
+   left: 12px;
+   fill: var(--secondary-text-color);
+   transition: fill 250ms var(--timing-function);
+}
+.comment {
+   height: 120px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   padding: 12px 16px;
+   font-size: 12px;
+   line-height: 1.17;
+   color: var(--secondary-text-color);
+   resize: none;
+   margin-bottom: 10px;
+   transition: border-color 250ms var(--timing-function);
+}
+.comment::placeholder {
+   transition: color 250ms var(--timing-function);
+}
+.comment::placeholder {
+   color: rgba(117, 117, 117, 0.5);
+}
+.comment:hover,
+.comment:focus {
+   outline: none;
+   border-color: var(--accent-color);
+}
+.form-modal-check {
+   margin-bottom: 30px;
+   padding-left: 12px;
+}
+.check-label {
+   display: flex;
+   align-items: center;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
+   color: var(--primary-text-color);
+}
+.modal-btn {
+   padding: 10px 52px;
+}
+.icon-check {
+   display: inline-block;
+   width: 16px;
+   height: 15px;
+   border-radius: 2px;
+   border: 2px solid var(--secondary-text-color);
+   margin-right: 7px;
+}
+.form-checkbox {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   position: absolute;
+}
+.form-checkbox:checked + .icon-check {
+   background-color: var(--accent-color);
+   background-image: url('../images/icon/icon-check.svg');
+   background-position: center;
+   
+}
+.check-link {
+   color: var(--accent-color);
+   margin-left: 4px;
+   background-size: contain;
+   background-origin: border-box;
+}
 
 
 
