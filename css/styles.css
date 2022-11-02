@@ -579,9 +579,7 @@ body {
   color: var(--primary-bg-color);
   margin-bottom: 20px;
 }
-/* .form-footer {
-} */
-.form-footer-content {
+.form-footer {
   display: flex;
 }
 /* .form-label-footer {
